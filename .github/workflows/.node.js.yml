@@ -33,6 +33,18 @@ jobs:
     - run: npm install
     - run: npm run build --if-present
 
+    - run: npm run coverage
+      env:  
+        CI: true
+        NODE_ENV: test
+        JWT_KEY: ${{ secrets.JWT_KEY }}
+        MONGO_URL: mongodb://localhost:27017/kaya
+        API_KEY: ${{ secrets.API_KEY }}
+        API_SECRET: ${{ secrets.API_SECRET }}
+        CLOUD_NAME: ${{ secrets.CLOUD_NAME }}
+        API_NAME: ${{ secrets.APP_NAME }}
+        PORT: ${{ secrets.PORT }}
+
     - name: Coveralls
       uses: coverallsapp/github-action@master
       with:

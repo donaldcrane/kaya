@@ -1,14 +1,14 @@
 # fave
 
-[![Node.js CI]()
+[![Node.js CI](https://github.com/donaldcrane/kaya/actions/workflows/.node.js.yml/badge.svg)](https://github.com/donaldcrane/kaya/actions/workflows/.node.js.yml)
 
-[![Coverage Status]()
+[![Coverage Status](https://coveralls.io/repos/github/donaldcrane/kaya/badge.svg?branch=main)](https://coveralls.io/github/donaldcrane/kaya?branch=main)
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/606d77ff293c4652107d/maintainability)](https://codeclimate.com/github/donaldcrane/kaya/maintainability)
 
-[Hekoku url](https://donald-kaya.herokuapp.com)
+Alink to the app Heroku url: [Hekoku url](https://donald-kaya.herokuapp.com)
 
-Fave is a RESTful API service inventory management app
+Kaya is a RESTful API service for a Beauty Parlour app
 
 # Documentation
 

@@ -6,7 +6,7 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/606d77ff293c4652107d/maintainability)](https://codeclimate.com/github/donaldcrane/kaya/maintainability)
 
-Alink to the app Heroku url: [Hekoku url](https://donald-kaya.herokuapp.com)
+link to the app Heroku url: [Hekoku url](https://donald-kaya.herokuapp.com)
 
 Kaya is a RESTful API service for a Beauty Parlour app
 
@@ -17,7 +17,7 @@ A detailed documentation of the api can be found here: [API Documentation](https
 
 - Clone the project
 - cd into the project's folder and run npm install to install dependencies
-- Create a .env file and add PORT value, JWT_KEY, COOKIE_KEY, MONGO_URL for development and TEST_MONGO_URL for testing
+- Create a .env file check the .env.sample for the keys variables
 
 - Run npm run seed to seed data into the database
 - Run npm run dev to start the server

@@ -1,0 +1,52 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Node.js CI
+
+on: ["push"]
+    
+
+jobs:
+  build:
+    name: Build
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x, 14.x]
+        mongodb-version: [4.4]
+    
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Start MongoDB
+      uses: supercharge/mongodb-github-action@1.2.0
+      with:
+        mongodb-version: ${{ matrix.mongodb-version }}
+        
+      
+    - run: npm install
+    - run: npm run build --if-present
+
+    - run: npm run coverage
+      env:  
+        CI: true
+        NODE_ENV: test
+        JWT_KEY: ${{ secrets.JWT_KEY }}
+        MONGO_URL: mongodb://localhost:27017/crane
+        API_KEY: ${{ secrets.API_KEY }}
+        API_SECRET: ${{ secrets.API_SECRET }}
+        CLOUD_NAME: ${{ secrets.CLOUD_NAME }}
+        API_NAME: ${{ secrets.APP_NAME }}
+        PORT: ${{ secrets.PORT }}
+
+    - name: Coveralls
+      uses: coverallsapp/github-action@master
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        

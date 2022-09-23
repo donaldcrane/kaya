@@ -38,7 +38,7 @@ jobs:
         CI: true
         NODE_ENV: test
         JWT_KEY: ${{ secrets.JWT_KEY }}
-        MONGO_URL: mongodb://localhost:27017/crane
+        MONGO_URL: mongodb://localhost:27017/kaya
         API_KEY: ${{ secrets.API_KEY }}
         API_SECRET: ${{ secrets.API_SECRET }}
         CLOUD_NAME: ${{ secrets.CLOUD_NAME }}

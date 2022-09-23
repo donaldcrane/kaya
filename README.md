@@ -1,4 +1,4 @@
-# fave
+# KAYA
 
 [![Node.js CI](https://github.com/donaldcrane/kaya/actions/workflows/.node.js.yml/badge.svg)](https://github.com/donaldcrane/kaya/actions/workflows/.node.js.yml)
 

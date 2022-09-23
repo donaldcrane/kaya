@@ -4,7 +4,7 @@
 
 [![Coverage Status](https://coveralls.io/repos/github/donaldcrane/kaya/badge.svg?branch=main&service=github)](https://coveralls.io/github/donaldcrane/kaya?branch=main)
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/606d77ff293c4652107d/maintainability)](https://codeclimate.com/github/donaldcrane/kaya/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/8d6e4fb6fe0886f80786/maintainability)](https://codeclimate.com/github/donaldcrane/kaya/maintainability)
 
 link to the app Heroku url: [Hekoku url](https://donald-kaya.herokuapp.com)
 

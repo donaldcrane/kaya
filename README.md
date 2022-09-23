@@ -12,7 +12,8 @@ Kaya is a RESTful API service for a Beauty Parlour app
 
 # Documentation
 
-A detailed documentation of the api can be found here: [API Documentation](https://documenter.getpostman.com/view/11971882/UzJLQGqL)
+A detailed documentation of the api can be found here: [API Documentation](https://documenter.getpostman.com/view/11971882/2s7ZLhpBzj)
+
 **Run Project Locally**
 
 - Clone the project

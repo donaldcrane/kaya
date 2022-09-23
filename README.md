@@ -2,6 +2,7 @@
 
 [![Node.js CI](https://github.com/donaldcrane/kaya/actions/workflows/.node.js.yml/badge.svg)](https://github.com/donaldcrane/kaya/actions/workflows/.node.js.yml)
 
+[![Coverage Status](https://coveralls.io/repos/github/donaldcrane/kaya/badge.svg?branch=main)](https://coveralls.io/github/donaldcrane/kaya?branch=main)
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/8d6e4fb6fe0886f80786/maintainability)](https://codeclimate.com/github/donaldcrane/kaya/maintainability)
 
